@@ -11,6 +11,7 @@
 		4AB7EE2B25F91C6100000C44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB7EE2A25F91C6100000C44 /* ContentView.swift */; };
 		4AB7EE2D25F91C6600000C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7EE2C25F91C6600000C44 /* Assets.xcassets */; };
 		4AB7EE3025F91C6600000C44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7EE2F25F91C6600000C44 /* Preview Assets.xcassets */; };
+		4AB7EE3925F91CA000000C44 /* InputPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB7EE3825F91CA000000C44 /* InputPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4AB7EE2C25F91C6600000C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AB7EE2F25F91C6600000C44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AB7EE3125F91C6600000C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB7EE3825F91CA000000C44 /* InputPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB7EE2825F91C6100000C44 /* SteelCalculatorApp.swift */,
-				4AB7EE2A25F91C6100000C44 /* ContentView.swift */,
+				4AB7EE3B25F91CAC00000C44 /* Views */,
 				4AB7EE2C25F91C6600000C44 /* Assets.xcassets */,
 				4AB7EE3125F91C6600000C44 /* Info.plist */,
 				4AB7EE2E25F91C6600000C44 /* Preview Content */,
@@ -67,6 +69,15 @@
 				4AB7EE2F25F91C6600000C44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4AB7EE3B25F91CAC00000C44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AB7EE2A25F91C6100000C44 /* ContentView.swift */,
+				4AB7EE3825F91CA000000C44 /* InputPage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB7EE2B25F91C6100000C44 /* ContentView.swift in Sources */,
+				4AB7EE3925F91CA000000C44 /* InputPage.swift in Sources */,
 				4AB7EE2925F91C6100000C44 /* SteelCalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
