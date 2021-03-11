@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct InputPage: View {
+    
+    @State private var span: String = ""
+    @State private var numberOfStories: String = ""
+    
     var body: some View {
-       Text("Hello, World")
+        Section(header: Text("What is the distance between columns?")) {
+            TextField("e.g.: 1024", text: $span)
+                .keyboardType(.numberPad)
+                .padding()
+        }
+        Section(header: Text("How many stories?")) {
+            TextField("e.g.: 1024", text: $numberOfStories)
+                .keyboardType(.numberPad)
+                .padding()
+        }
     }
 }
 
