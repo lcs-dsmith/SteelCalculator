@@ -7,14 +7,19 @@
 
 import SwiftUI
 
-struct OutputPage: View {
+struct AnimationPage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Image("HighRise")
+                .resizable()
+            
+            Text("Calculating...")
+        }
     }
 }
 
 struct OutputPage_Previews: PreviewProvider {
     static var previews: some View {
-        OutputPage()
+        AnimationPage()
     }
 }

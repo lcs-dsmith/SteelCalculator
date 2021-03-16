@@ -16,28 +16,26 @@ struct InputPage: View {
     var body: some View {
         NavigationView {
             List {
-                    VStack {
-                        
-                        Section(header: Text("What is the distance between columns?")) {
-                            TextField("e.g.: 1024", text: $span)
-                                .keyboardType(.numberPad)
-                                .padding()
-                        }
-                        Section(header: Text("How many stories?")) {
-                            TextField("e.g.: 1024", text: $numberOfStories)
-                                .keyboardType(.numberPad)
-                                .padding()
-                        }
-                        
-                        NavigationLink(
-                            destination: OutputPage(),
-                            label: {
-                                Text("Calculate")
-                                    .foregroundColor(Color.blue)
-                                    .multilineTextAlignment(.center)
-                                    
-                            })
+                VStack {
                     
+                    Section(header: Text("What is the distance between columns?")) {
+                        TextField("e.g.: 1024", text: $span)
+                            .keyboardType(.numberPad)
+                            .padding()
+                    }
+                    Section(header: Text("How many stories?")) {
+                        TextField("e.g.: 1024", text: $numberOfStories)
+                            .keyboardType(.numberPad)
+                            .padding()
+                    }
+                    NavigationLink(
+                        destination: AnimationPage(),
+                        label: {
+                            Text("Calculate")
+                                .foregroundColor(Color.blue)
+                                .multilineTextAlignment(.center)
+                                
+                        })
                 }
             }
         }
