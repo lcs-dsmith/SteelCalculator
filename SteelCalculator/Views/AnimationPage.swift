@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct AnimationPage: View {
+    
+    @State var height: CGFloat = 500
+    
     var body: some View {
         VStack{
-            Image("HighRise")
-                .resizable()
+            ZStack{
+                Image("HighRise")
+                    .resizable()
+                Rectangle()
+                    .frame(width: 1000, height: height, alignment: .center)
+            }
             
             Text("Calculating...")
+                .font(.headline)
+                .fontWeight(.bold)
         }
     }
 }
