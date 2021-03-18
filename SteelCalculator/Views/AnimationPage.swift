@@ -11,13 +11,22 @@ struct AnimationPage: View {
     
     @State var height: CGFloat = 520
     
+    @State var goToOutputPage:Bool = false
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         VStack{
             ZStack{
-                Image("HighRise")
-                    .resizable()
+                VStack{
+NavigationLink(
+    "View Results", destination: OutputPage())
+                    
+                    
+                    Image("HighRise")
+                        .resizable()
+                   
+                }
                 Rectangle()
                     .size(width: 1000, height: height)
                     .onReceive(timer) { _ in
@@ -26,6 +35,7 @@ struct AnimationPage: View {
                         }
                     }
             }
+            
             Text("Calculating...")
                 .font(.headline)
                 .fontWeight(.bold)
@@ -33,7 +43,7 @@ struct AnimationPage: View {
     }
 }
 
-struct OutputPage_Previews: PreviewProvider {
+struct AnimationPage_Previews: PreviewProvider {
     static var previews: some View {
         AnimationPage()
     }

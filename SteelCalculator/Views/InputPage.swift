@@ -28,6 +28,9 @@ struct InputPage: View {
                             .keyboardType(.numberPad)
                             .padding()
                     }
+                    
+                        
+                    
                     NavigationLink(
                         destination: AnimationPage(),
                         label: {
