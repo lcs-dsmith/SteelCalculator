@@ -34,11 +34,12 @@ NavigationLink(
                             height = 0
                         }
                     }
+                Text("Calculating...")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.yellow)
+                
             }
-            
-            Text("Calculating...")
-                .font(.headline)
-                .fontWeight(.bold)
         }
     }
 }

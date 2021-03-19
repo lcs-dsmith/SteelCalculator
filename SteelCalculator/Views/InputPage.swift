@@ -10,9 +10,10 @@ import SwiftUI
 struct InputPage: View {
     
     @State var goToOutputPage: Bool = false
-    @State private var span: String = ""
-    @State private var numberOfStories: String = ""
-    
+    @State var span: String = ""
+    @State var numberOfStories: String = ""
+//    span = span
+//    Input.numberOfStories = numberOfStories
     var body: some View {
         NavigationView {
             List {
@@ -29,8 +30,6 @@ struct InputPage: View {
                             .padding()
                     }
                     
-                        
-                    
                     NavigationLink(
                         destination: AnimationPage(),
                         label: {
@@ -46,8 +45,8 @@ struct InputPage: View {
 }
 
 
-struct InputPage_Previews: PreviewProvider {
-    static var previews: some View {
-        InputPage()
-    }
-}
+//struct InputPage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        InputPage()
+//    }
+//}

@@ -14,6 +14,7 @@
 		4AB7EE2D25F91C6600000C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7EE2C25F91C6600000C44 /* Assets.xcassets */; };
 		4AB7EE3025F91C6600000C44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7EE2F25F91C6600000C44 /* Preview Assets.xcassets */; };
 		4AB7EE3925F91CA000000C44 /* InputPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB7EE3825F91CA000000C44 /* InputPage.swift */; };
+		4AC4268D2604FABC002221CB /* Inputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4268C2604FABC002221CB /* Inputs.swift */; };
 		4AFD3FA62602532000DBF556 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD3FA52602532000DBF556 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		4AB7EE2F25F91C6600000C44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AB7EE3125F91C6600000C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB7EE3825F91CA000000C44 /* InputPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPage.swift; sourceTree = "<group>"; };
+		4AC4268C2604FABC002221CB /* Inputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inputs.swift; sourceTree = "<group>"; };
 		4AFD3FA52602532000DBF556 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4AFD3FA52602532000DBF556 /* Functions.swift */,
+				4AC4268C2604FABC002221CB /* Inputs.swift */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				4AB7EE3925F91CA000000C44 /* InputPage.swift in Sources */,
 				4AB7EE2925F91C6100000C44 /* SteelCalculatorApp.swift in Sources */,
 				4AFD3FA62602532000DBF556 /* Functions.swift in Sources */,
+				4AC4268D2604FABC002221CB /* Inputs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
