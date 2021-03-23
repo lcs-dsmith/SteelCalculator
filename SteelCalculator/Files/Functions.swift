@@ -35,7 +35,7 @@ func getInnerColumnWidth(span: Double, stories: Int) -> String {
     return columnSize
 }
 
-func getEdgeColumnWidth(span: Double, stories: Int) -> String {
+func getEdgeColumnWidth(span: String, stories: String) -> String {
     let area = Int(span) * Int(span) / 2 * stories
     
     var columnSize: String

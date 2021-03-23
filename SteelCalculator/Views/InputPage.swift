@@ -31,7 +31,7 @@ struct InputPage: View {
                     }
                     
                     NavigationLink(
-                        destination: AnimationPage(),
+                        destination: AnimationPage(inputData: Input(span: span, numberOfStories: numberOfStories)),
                         label: {
                             Text("Calculate")
                                 .foregroundColor(Color.blue)

@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct OutputPage: View {
+    
+    @ObservedObject var inputData: Input
+    var edgeColumnWidth = getEdgeColumnWidth(span: testInput.$span, stories: testInput.$numberOfStories)
+    
+    var cornerColumnWidth = getCornerColumnWidth(span: testInput.$span, stories: testInput.$numberOfStories)
+    
+    var innerColumnWidth = getInnerColumnWidth(span: testInput.$span, stories: testInput.$numberOfStories)
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        Text("H")
+            }
 }
 
 struct OutputPage_Previews: PreviewProvider {
     static var previews: some View {
-        OutputPage()
+        OutputPage(inputData: testInput)
     }
 }

@@ -15,3 +15,5 @@ class Input:  ObservableObject{
         self.numberOfStories = numberOfStories
     }
 }
+
+let testInput = Input(span: "5", numberOfStories: "7")

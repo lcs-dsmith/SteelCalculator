@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AnimationPage: View {
     
+    @ObservedObject var inputData: Input
+    
     @State var height: CGFloat = 520
     
     @State var goToOutputPage:Bool = false
@@ -20,7 +22,7 @@ struct AnimationPage: View {
             ZStack{
                 VStack{
 NavigationLink(
-    "View Results", destination: OutputPage())
+    "View Results", destination: OutputPage(inputData: inputData))
                     
                     
                     Image("HighRise")
@@ -46,6 +48,6 @@ NavigationLink(
 
 struct AnimationPage_Previews: PreviewProvider {
     static var previews: some View {
-        AnimationPage()
+        AnimationPage(inputData: testInput)
     }
 }
