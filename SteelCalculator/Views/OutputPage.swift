@@ -19,14 +19,14 @@ struct OutputPage: View {
 
         let innerColumnWidth: String = getInnerColumnWidth(span: Data1.span, stories: Data1.numberOfStories)
 
-        let girderSize: Int = getInnerGirderWidth(span: Data1.span)
+        let girderSize: String = getInnerGirderWidth(span: Data1.span)
         
         VStack{
             Text("You will need:")
-            Text(cornerColumnWidth + "for the corner columns")
-            Text(edgeColumnWidth + "for the edge columns")
-            Text(innerColumnWidth + "for the inneer columns")
-            Text(String(girderSize))
+            Text(cornerColumnWidth + " for the corner columns")
+            Text(edgeColumnWidth + " for the edge columns")
+            Text(innerColumnWidth + " for the inneer columns")
+            Text(girderSize + " is your beam size")
         }
     }
 }

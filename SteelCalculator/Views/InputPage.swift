@@ -19,17 +19,16 @@ struct InputPage: View {
             List {
                 VStack {
                     
-                    Section(header: Text("What is the distance between columns?")) {
+                    Section(header: Text("What is the distance between columns? (In Inches)")) {
                         TextField("e.g.: 1024", text: $span)
                             .keyboardType(.numberPad)
                             .padding()
                     }
                     Section(header: Text("How many stories?")) {
-                        TextField("e.g.: 1024", text: $numberOfStories)
+                        TextField("e.g.: 24", text: $numberOfStories)
                             .keyboardType(.numberPad)
                             .padding()
                     }
-                    
                     NavigationLink(
                         destination: AnimationPage(inputData: Input(span: span, numberOfStories: numberOfStories)),
                         label: {
