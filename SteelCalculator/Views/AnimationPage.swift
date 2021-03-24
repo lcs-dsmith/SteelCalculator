@@ -22,7 +22,7 @@ struct AnimationPage: View {
             ZStack{
                 VStack{
 NavigationLink(
-    "View Results", destination: OutputPage(inputData: inputData))
+    "View Results", destination: OutputPage(Data1: inputData))
                     
                     
                     Image("HighRise")
