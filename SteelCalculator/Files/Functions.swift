@@ -63,7 +63,7 @@ func getInnerGirderWidth(span: String) -> String {
     case 28:
         girderSize = "W 27 x 178"
     default:
-        girderSize = "Span is too great, please input a shoter distance"
+        girderSize = "Column spacing is to great, please input a shoter distance to get an accurate estimate"
     }
     
     //will return a 'W _ x _' girder size

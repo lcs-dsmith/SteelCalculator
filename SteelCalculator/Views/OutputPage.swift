@@ -23,10 +23,26 @@ struct OutputPage: View {
         
         VStack{
             Text("You will need:")
+               
+            Text(" ")
+            Text("Columns")
+                .font(.headline)
+            
             Text(cornerColumnWidth + " for the corner columns")
+            Text(" ")
             Text(edgeColumnWidth + " for the edge columns")
-            Text(innerColumnWidth + " for the inneer columns")
-            Text(girderSize + " is your beam size")
+            Text(" ")
+            Text(innerColumnWidth +
+                """
+                for the inneer columns
+
+                """)
+
+            Text("Beams")
+                .font(.headline)
+            
+            Text("\(girderSize) for your beam size")
+                
         }
     }
 }
